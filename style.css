@@ -1,4 +1,43 @@
-html {
-  height: 100%;
-  width: 100%;
+
+body{
+  font-family:"Inria Serif", serif;
+  background-color:#1FB544;
+  font-weight: bold;
 }
+
+#menu{
+  max-width:4%;
+}
+
+#shbio{
+  font-size:1.5em;
+  background-color:#e50000;
+  padding: 10px;
+}
+
+#velzo {
+  width:30%;
+}
+
+#mcon{
+  display:flex;
+  flex-direction:column;
+  padding:7px;
+  justify-content: space-between;
+}
+
+#alo{
+  color: white;
+}
+
+#bigdivy{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nama{
+  background-color: #FF8D00;
+  padding: 10px;
+  border-radius: 6px;
+}
+
