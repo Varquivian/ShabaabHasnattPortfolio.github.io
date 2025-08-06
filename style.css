@@ -5,6 +5,10 @@ body{
   font-weight: bold;
 }
 
+#btndiv{
+  width: auto;
+}
+
 #menu{
   max-width:4%;
 }
@@ -13,6 +17,8 @@ body{
   font-size:1.5em;
   background-color:#e50000;
   padding: 10px;
+  border-radius: 6px;
+  width: fit-content;
 }
 
 #velzo {
@@ -20,14 +26,18 @@ body{
 }
 
 #mcon{
+  /* border: 5px solid black; */
+  margin: 20px;
+  width:50%;
   display:flex;
   flex-direction:column;
-  padding:7px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #alo{
   color: white;
+  width: fit-content;
 }
 
 #bigdivy{
@@ -36,8 +46,18 @@ body{
 }
 
 .nama{
+  margin-bottom: 10px;
+  width:fit-content;
+  height:fit-content;
   background-color: #FF8D00;
   padding: 10px;
   border-radius: 6px;
+  display:flex;
+  align-items: center;
+  
 }
 
+.conol{
+  font-weight: bolder;
+  font-size: 115%;
+}
