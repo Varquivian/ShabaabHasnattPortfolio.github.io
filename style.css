@@ -1,32 +1,57 @@
+/* Custom CSS Bootstrap color change, applies to both pages */
+.btn-success {
+  background-color: #1FB544;
+}
+.btn-danger{
+  background-color:#e50000;
+}
+.btn-warning{
+  background-color:#FFEE00;
+}
 
-body{
+
+
+/* Page 1 */
+
+
+/* Page 1 body */
+#body1{
   font-family:"Inria Serif", serif;
   background-color:#1FB544;
   font-weight: bold;
 }
 
+
+/* Div for clumping all the buttons together */
 #btndiv{
   width: auto;
 }
 
+
+/* Shrinking the menu button */
 #menu{
   max-width:4%;
 }
 
+
+/* Short bio */
 #shbio{
   font-size:1.5em;
   background-color:#e50000;
   padding: 10px;
   border-radius: 6px;
   width: fit-content;
+  color:#BAF484;
 }
 
-#velzo {
-  width:30%;
+
+/* Div for short bio */
+#alo{
+  width: fit-content;
 }
 
+/* Div for all the biographic elements */
 #mcon{
-  /* border: 5px solid black; */
   margin: 20px;
   width:50%;
   display:flex;
@@ -35,16 +60,18 @@ body{
   align-items: flex-start;
 }
 
-#alo{
-  color: white;
-  width: fit-content;
+/* Image div */
+#velzo {
+  width:30%;
 }
 
+/* Div for all the contents(except navbar elements) */
 #bigdivy{
   display: flex;
   justify-content: space-evenly;
 }
 
+/* Name Plate */
 .nama{
   margin-bottom: 10px;
   width:fit-content;
@@ -57,7 +84,201 @@ body{
   
 }
 
+/* Pronoun Plate */
+.namako{
+  margin-bottom: 10px;
+  width:fit-content;
+  height:fit-content;
+  background-color: #760088;
+  color: #FFEE00;
+  padding: 10px;
+  border-radius: 6px;
+  display:flex;
+  align-items: center;
+}
+
+/* Button text modification */
 .conol{
   font-weight: bolder;
   font-size: 115%;
 }
+
+
+/* Page 1 */
+
+
+
+
+/* Page 2 */
+
+
+#body2{
+  font-family:"Inria Serif", serif;
+  background-color:#760088;
+  font-weight: bold;
+}
+
+/* The div for all the cards */
+.conozo{
+  /* border: 3px solid black; */
+  height:100vh;
+  padding: 0px 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* All the cards */
+.card{
+  padding: 10px;
+  margin: 20px;
+  background-color: #FF8D00;
+}
+
+/* The tiles of all the cards */
+.cartitle{
+  background-color: #FFEE00;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+/* The div that contains all the color boxes */
+#coleurs{
+  width: fit-content;
+  height: fit-content;
+  background-color: lightgray;
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+}
+
+/* All the colors */
+#noir{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: black;
+}
+
+#brun{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: #613915;
+}
+
+#rouge{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: #E50000;
+}
+
+#orange{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: #FF8D00;
+}
+
+#jaune{
+  height: 140px;
+  width:140px;
+  margin:6px;
+  background-color: #FFEE00;
+}
+
+#vert-clair{
+  height: 140px;
+  width:140px;
+  margin:6px;
+  background-color: #BAF484;
+}
+
+#verte{
+  height:140px;
+  width: 140px;
+  margin:6px;
+  background-color: #1FB544;
+}
+
+#bleu{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: #0772FF;
+}
+
+#violette{
+  height: 140px;
+  width: 140px;
+  margin:6px;
+  background-color: #760088;
+}
+
+/* Wirefram Images */
+#wirframImgs{
+  display:flex;
+  flex-direction: row;
+  margin:6px;
+  justify-content: space-around;
+}
+
+
+/* flip card stuff */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+#intcard{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 140px;
+  height: 140px;
+  border: 5px solid #1FB544;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #BAF484;
+  padding:5px;
+  
+  color: #760088;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #bbb;
+  color: black;
+  
+  transform: rotateY(180deg);
+}
+
+/* Page 2 */
