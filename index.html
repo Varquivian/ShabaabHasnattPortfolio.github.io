@@ -17,25 +17,26 @@
   <nav class="navbar navbar-expand-xxl bg-primary navbar-dark"> 
     <div class="container-fluid">
       <div id="btndiv">
-        <!-- resume button -->
-        <button type="button" class="btn btn-success" onclick="document.location='page2.html'">
-           <p class="conol">Resume</p>
-        </button>
-        <!--resume  button -->
-
         <!-- contact me button -->
-        <button type="button" class="btn btn-danger" onclick="document.location='page2.html'">
+        <button type="button" class="btn btn-danger" onclick="navigateToAndScroll('page2.html#contacto')">
           <p class="conol">Contact me</p>
         </button>
         <!-- contact me button -->
         
         <button type="button" class="btn btn-warning" onclick="document.location='page2.html'">
            <p class="conol">Design Assets</p>
+
+          <!-- clicky button -->
+          <button type="button" class="btn btn-success" onclick="randomColourConvertOne()" style="margin-left: 3px;">
+             <p class="conol">CLICKY Button!!</p>
+          </button>
+          <!--clicky  button -->
+          
         </button>
       </div>
       <!-- menu button -->
       <!-- menu bar by agus raharjo from <a href="https://thenounproject.com/browse/icons/term/menu-bar/" target="_blank" title="menu bar Icons">Noun Project</a> (CC BY 3.0) -->
-      <input id="menu" type="image" src="menubar.svg" />
+      <input id="menu" type="image" src="menubar.svg" onclick="document.location='page2.html'" />
       <!-- menu button -->
     </div>
   </nav>

@@ -16,14 +16,9 @@
   <nav class="navbar navbar-expand-xxl bg-primary navbar-dark"> 
     <div class="container-fluid">
       <div id="btndiv">
-        <!-- resume button -->
-        <button type="button" class="btn btn-success" onclick="document.location='page2.html'">
-           <p class="conol">Resume</p>
-        </button>
-        <!--resume  button -->
-
+        
         <!-- contact me button -->
-        <button type="button" class="btn btn-danger" onclick="document.location='page2.html'">
+        <button type="button" class="btn btn-danger" onclick="navigateToAndScroll('page2.html#contacto')">
           <p class="conol">Contact me</p>
         </button>
         <!-- contact me button -->
@@ -31,10 +26,17 @@
         <button type="button" class="btn btn-warning" onclick="document.location='page2.html'">
            <p class="conol">Design Assets</p>
         </button>
+
+        <!-- clicky button -->
+        <button type="button" class="btn btn-success" onclick="randomColourConvertTwo()">
+           <p class="conol">CLICKY Button!!</p>
+        </button>
+        <!--clicky  button -->
+        
       </div>
       <!-- menu button -->
       <!-- menu bar by agus raharjo from <a href="https://thenounproject.com/browse/icons/term/menu-bar/" target="_blank" title="menu bar Icons">Noun Project</a> (CC BY 3.0) -->
-      <input id="menu" type="image" src="menubar.svg" />
+      <input id="menu" type="image" src="menubar.svg" onclick="document.location='index.html'" />
       <!-- menu button -->
     </div>
   </nav>
@@ -190,14 +192,20 @@
     </div>
 
     
-  <div class="card">
+    <div class="card">
     <p class="cartitle">Skills</p>
     <div style="background-color:transparent;width:auto;height:auto;display:flex;flex-direction:row;justify-content:space-evenly">
       <img src="html.png" alt="logo of HTML" style="border:5px solid #1FB544">
       <img src="css.png" alt="logo of CSS" style="border:5px solid #1FB544">
       <img src="js.png" alt="logo of JavaScript" style="border:5px solid #1FB544">
     </div>
-  </div>
+    </div>
+
+    <div class="card">
+      <p class="cartitle">Contact Info</p>
+      <p style="font-size: 30px; font-weight: bold; text-align: center"> Email: shabaabhasnatt37@gmail.com</p>
+      <a href="https://www.linkedin.com/in/shabaab-hasnatt-11a8801b9/" style="font-size: 30px; font-weight: bold; text-align: center" id="contacto">Shabaab Hasnatt's LinkedIn Profile</a>
+    </div>
   
   <script src="script.js"></script>
 </body>

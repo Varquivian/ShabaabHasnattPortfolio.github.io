@@ -116,13 +116,14 @@
   font-family:"Inria Serif", serif;
   background-color:#760088;
   font-weight: bold;
+  margin-bottom: 200px;
 }
 
 /* The div for all the cards */
 .conozo{
   /* border: 3px solid black; */
   height:100vh;
-  padding: 0px 20px;
+  padding: 20px 20px;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
